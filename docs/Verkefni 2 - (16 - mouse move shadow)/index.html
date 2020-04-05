@@ -1,0 +1,78 @@
+<!--
+Í staðinn fyrir að skugganir snúast í kring um textan þá forðast þeir núna músina.
+Skugganir breyta um lit eftir því hvar músin er staðsett, og skugganir dofna því lengra sem þeir eru frá textanum
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>Verkefni 3!</h1>
+  </div>
+
+  <style>
+  html {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+
+<script>
+  const hero = document.querySelector('.hero');
+  const text = hero.querySelector('h1');
+  const walk = 500; // 500px
+
+  function shadow(e) {
+    const { offsetWidth: width, offsetHeight: height } = hero;
+    let { offsetX: x, offsetY: y } = e;
+
+    if (this !== e.target) {
+      x = x + e.target.offsetLeft;
+      y = y + e.target.offsetTop;
+    }
+
+    const xWalk = Math.round((x / width * walk) - (walk / 2));
+    const yWalk = Math.round((y / height * walk) - (walk / 2));
+
+
+    const colorR = e.clientX / 10;
+    const colorG = e.clientY / 10;
+    const colorB = ((e.clientY + e.clientX) / 2) / 10;
+
+    console.log(colorR, colorG, colorB);
+
+    text.style.textShadow = `
+      ${(xWalk * 0.5) * -1}px ${(yWalk * 0.5) * -1}px 2px rgba(${colorR},${colorG},${colorB},0.6),
+      ${xWalk * -1}px ${yWalk * -1}px 5px rgba(${colorG},${colorB},${colorR},0.3),
+      ${(xWalk * 1.5) * -1}px ${(yWalk * 1.5) * -1}px 10px rgba(${colorB},${colorR},${colorG},0.1)
+    `;
+
+  }
+
+  hero.addEventListener('mousemove', shadow);
+</script>
+</body>
+</html>
