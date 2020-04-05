@@ -17,3 +17,7 @@
 ### Verkefni 4 (Dagur 23 -  Speech synthesis)
 > Hér er: [kóðinn](https://github.com/MikaelAndriIngason/FORR3JS05DU-Verkefni-3/tree/master/docs/Verkefni%204%20-%20(23%20-%20Speech%20synthesis))   
 > Hér er: [útfærslan](https://mikaelandriingason.github.io/FORR3JS05DU-Verkefni-3/Verkefni%204%20-%20(23%20-%20Speech%20synthesis)/)
+
+### Verkefni 5 (Dagur 5 - Flex panel gallery)
+> Hér er: [kóðinn](https://github.com/MikaelAndriIngason/FORR3JS05DU-Verkefni-3/tree/master/docs/Verkefni%205%20-%20(5%20-%20Flex%20panel%20gallery))   
+> Hér er: [útfærslan](https://mikaelandriingason.github.io/FORR3JS05DU-Verkefni-3/Verkefni%205%20-%20(5%20-%20Flex%20panel%20gallery)/)
