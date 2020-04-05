@@ -1,5 +1,7 @@
 # FORR3JS05DU - Verkefni 3
 
+Öll comments eru í index skránum.
+
 ### Verkefni 1 (Dagur 24 - Sticky nav)
 > Hér er: [kóðinn](https://github.com/MikaelAndriIngason/FORR3JS05DU-Verkefni-3/tree/master/docs/Verkefni%201%20-%20(24%20-%20sticky%20nav))   
 > Hér er: [útfærslan](https://mikaelandriingason.github.io/FORR3JS05DU-Verkefni-3/Verkefni%201%20-%20(24%20-%20sticky%20nav)/)
